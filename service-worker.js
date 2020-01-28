@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gibm-calendar/precache-manifest.eca285de9c5d278169d7344e6db193a1.js"
+  "/gibm-calendar/precache-manifest.dd060c6329adcd17a55f53f5d43dc8d5.js"
 );
 
 self.addEventListener('message', (event) => {
