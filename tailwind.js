@@ -3,6 +3,65 @@ module.exports = {
   important: false,
   separator: ':',
   theme: {
+    extend: {
+      colors: {
+        'mint-cream': {
+          100: '#FEFFFE',
+          200: '#FDFFFD',
+          300: '#FCFFFC',
+          400: '#F9FFF9',
+          500: '#F7FFF7',
+          600: '#DEE6DE',
+          700: '#949994',
+          800: '#6F736F',
+          900: '#4A4D4A',
+        },
+        'pastal-blue': {
+          100: '#F6FAFA',
+          200: '#E9F3F2',
+          300: '#DCEBEA',
+          400: '#C1DDDB',
+          500: '#A7CECB',
+          600: '#96B9B7',
+          700: '#647C7A',
+          800: '#4B5D5B',
+          900: '#323E3D',
+        },
+        'blue-saphire': {
+          100: '#E8F0F2',
+          200: '#C6D8DF',
+          300: '#A3C1CB',
+          400: '#5E93A5',
+          500: '#19647E',
+          600: '#175A71',
+          700: '#0F3C4C',
+          800: '#0B2D39',
+          900: '#081E26',
+        },
+        pineapple: {
+          100: '#ECEBEE',
+          200: '#CFCDD6',
+          300: '#B3AFBD',
+          400: '#79748B',
+          500: '#403859',
+          600: '#3A3250',
+          700: '#262235',
+          800: '#1D1928',
+          900: '#13111B',
+        },
+        'dark-purple': {
+          100: '#EAE9EB',
+          200: '#CBC8CD',
+          300: '#ACA7AF',
+          400: '#6E6474',
+          500: '#302238',
+          600: '#2B1F32',
+          700: '#1D1422',
+          800: '#160F19',
+          900: '#0E0A11',
+        },
+      },
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -183,10 +242,14 @@ module.exports = {
       '8': '8px',
     },
     boxShadow: {
-      default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-      md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-      lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-      xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+      default:
+        '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+      md:
+        '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+      lg:
+        '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+      xl:
+        '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
@@ -234,13 +297,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: [
-        'Georgia',
-        'Cambria',
-        '"Times New Roman"',
-        'Times',
-        'serif',
-      ],
+      serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
         'Menlo',
         'Monaco',
@@ -488,4 +545,4 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [],
-}
+};

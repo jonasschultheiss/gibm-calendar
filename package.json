@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/autoprefixer": "^9.6.1",
     "autoprefixer": "^9.7.4",
     "postcss-cli": "^7.1.0",
     "react": "^16.12.0",
@@ -14,12 +15,15 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "yarn build:style && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint src/ --ext .jsx,.js",
+    "lint:fix": "eslint src/ --ext .jsx,.js --fix",
+    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,7 +41,18 @@
     ]
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.5",
+    "babel-eslint": "^10.0.3",
+    "eslint": "6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "gh-pages": "^2.2.0",
+    "prettier": "^1.19.1",
     "tailwindcss": "^1.1.4"
   }
 }
