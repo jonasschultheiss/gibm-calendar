@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar settings</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="bg-fixed w-full h-full bg-black z-0 right-0 bottom-0 m-0 p-0 absolute overflow-hidden">
+      <svg style="width: 24rem; height: 24rem;" class="text-gray-500 -mt-32 -ml-16 font-bold opacity-25" viewBox="0 0 158 113" fill="none">
+        <path
+          d="M29.3883 83.5603L28 82.2216L26.6117 83.5603L2 107.293V89.8079L28 62.8794L54 89.808V107.293L29.3883 83.5603Z"
+          stroke="currentColor"
+          stroke-width="4"
+        />
+        <path d="M56.0243 59L9.67398 59L26.8558 41L76 41L76 90.1449L58.0243 107.323L58.0243 61L58.0243 59L56.0243 59Z" stroke="currentColor" stroke-width="4" />
+        <path
+          d="M91.176 2L155.159 65.4978L110.178 110H60.8652L104.407 66.9218L105.831 65.513L104.42 64.0912L42.8024 2H91.176Z"
+          stroke="currentColor"
+          stroke-width="4"
+        />
+      </svg>
+    </div>
+    <main class="z-10">
+      <div class="w-full m-0 h-full px-64 pb-16 pt-40">
+        <h1 class="text-5xl text-gray-200 font-bold opacity-75 text-right">/settings</h1>
+      </div>
+      <div class="px-6">
+        <!-- Dropdown 1 -->
+        <span class="inline-block relative border-2 border-gray-200 w-full p-2 rounded-md mx-6">
+          <p class="text-gray-200 opacity-75 font-medium text-lg">
+            select a job
+          </p>
+        </span>
+        <div id="job-dropdown-content"></div>
+        <!-- Dropdown 1 -->
+        <!-- Dropdown 2 -->
+        <span class="inline-block relative">select a class</span>
+        <div id="job-dropdown-content"></div>
+        <!-- Dropdown 2 -->
+      </div>
+    </main>
+    <script src="js/settings.js"></script>
+    <script>
+      this.addEventListener('DOMContentLoaded', (e) => {
+        init();
+      });
+    </script>
+  </body>
+</html>
